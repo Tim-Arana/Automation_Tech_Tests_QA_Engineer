@@ -1,0 +1,22 @@
+//Grafana Install
+winget install k6 --source winget
+//update k6
+winget upgrade k6
+//Playwright UI
+npx playwright test --ui
+//update playwright
+npm install -D @playwright/test@latest
+npx playwright install --with-deps
+
+
+
+//to check playwright version
+npx playwright --version
+
+version used in playwright
+Version 1.58.2
+
+
+
+//Open Playwright UI
+npx playwright test --ui
