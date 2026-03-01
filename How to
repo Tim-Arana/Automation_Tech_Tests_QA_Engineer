@@ -20,3 +20,11 @@ Version 1.58.2
 
 //Open Playwright UI
 npx playwright test --ui
+
+
+//To start Test
+npx playwright test
+
+
+//To check results and report
+npx playwright show-report
