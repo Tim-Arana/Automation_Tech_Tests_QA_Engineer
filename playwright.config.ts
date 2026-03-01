@@ -45,6 +45,11 @@ export default defineConfig({
     },
 
     {
+      name: 'edge',
+      use: {browserName: 'chromium', channel: 'msedge', ...devices['Desktop Chrome'],},
+    },
+
+    {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
