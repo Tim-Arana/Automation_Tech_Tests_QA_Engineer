@@ -1,10 +1,22 @@
 # Automation_Tech_Tests_QA_Engineer
 This is a basic automation test script using playwright.
 
+install node.js
+
+Open terminal using Command Prompt
+go to the directory of the folder
+
+example.
+CD .../Automation
+
+
 Setup for playwright.
 #K6 Install => winget install k6 --source winget
+
 #To check playwright version => npx playwright --version
 #update k6 => winget upgrade k6
+
+#Install playwright => npx playwright install
 #update playwright => npm install -D @playwright/test@latest  OR  npx playwright install --with-deps
 
 #To start Test => npx playwright test
