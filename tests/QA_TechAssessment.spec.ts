@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { WebUrl } from '../userTest.env';
 import { COUNTRY } from '../userTest.env';
 import { COMPANY } from '../userTest.env';
 import fs from 'fs';
@@ -30,7 +31,7 @@ And click on Update button for the country filter list
 Then the grid displays all meetings that are associated with the country “Belgium” on the page*/
 test('1_QA_Tech', async ({ page }) => {
 /*Given the user is on the landing page for the WD site*/
-  await page.goto('https://viewpoint.glasslewis.com/WD/?siteId=DemoClient');
+  await page.goto(WebUrl);
   // wait 3 seconds for grid to update
   await page.waitForTimeout(3000);
 /*And the Country filter is available*/
@@ -65,7 +66,7 @@ Then the user lands on the vote card page containing the vote table
 And “Activision Blizzard Inc” should appear in the top banner.*/
 test('2_QA_Tech', async ({ page }) => {
 /*Given the user is on the landing page for the WD site*/
-  await page.goto('https://viewpoint.glasslewis.com/WD/?siteId=DemoClient');
+  await page.goto(WebUrl);
   // wait 3 seconds for grid to update
   await page.waitForTimeout(3000);
 /*When the user searches for the company “Activision Blizzard Inc” in the top right search bar*/
