@@ -19,11 +19,11 @@ async function applyCountryFilter(page: Page, country: string) {
   await page.waitForTimeout(THINKTIME);
   await checkbox.click(); // click the checkbox to select the country
   await filter.getByRole('button', { name: 'Update' }).click();  // And click on Update button for the country filter list
+  await page.waitForTimeout(THINKTIME);
 
   // Then the grid displays all meetings that are associated with the country “Belgium” on the page
   // wait until at least one grid cell for the chosen country appears
   await page.waitForSelector(`role=gridcell[name="${country}"]`);
-  await page.waitForTimeout(THINKTIME);
 
 }
 
